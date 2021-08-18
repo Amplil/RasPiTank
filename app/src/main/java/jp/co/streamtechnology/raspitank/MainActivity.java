@@ -10,10 +10,9 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.net.Uri;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
@@ -26,7 +25,8 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.github.mikephil.charting.charts.BarChart;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.github.mikephil.charting.charts.HorizontalBarChart;
 import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.components.XAxis;
@@ -45,10 +45,10 @@ import java.util.ArrayList;
 import java.util.Set;
 import java.util.UUID;
 
+// import android.support.v7.app.AppCompatActivity;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, SensorEventListener {
 
-    private BluetoothAdapter BtAdapter;
-    private BluetoothDevice BtDev;
     private BluetoothSocket BtSock;
     private InputStream BtInStream;
     private OutputStream BtOutStream;
@@ -230,8 +230,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 Set<BluetoothDevice> pairedDevices = null;
                 try {
-                    BtAdapter = BluetoothAdapter.getDefaultAdapter();
-                    pairedDevices = BtAdapter.getBondedDevices();
+                    BluetoothAdapter btAdapter = BluetoothAdapter.getDefaultAdapter();
+                    pairedDevices = btAdapter.getBondedDevices();
                 }
                 catch (Exception ex){
                     ShowToast("Bluetoothが有効になっていません。:" + ex.getMessage());
@@ -240,15 +240,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     return;
                 }
                 this.ShowToast("RasPiTankに接続しています。");
-                this.BtDev = null;
+                BluetoothDevice btDev = null;
                 for (BluetoothDevice dev : pairedDevices) {
                     if (dev.getName().contains("RasPiTank")) {
-                        this.BtDev = dev;
+                        btDev = dev;
                         break;
                     }
                 }
 
-                if(this.BtDev == null){
+                if(btDev == null){
 
                     ShowToast("エラー：　RasPiTankがペアリングされていません。");
                     this.ButtonStopBt.setEnabled(false);
@@ -256,7 +256,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
 
                 try {
-                    this.BtSock = this.BtDev.createRfcommSocketToServiceRecord(UUID.fromString(SPP_UUID));
+                    this.BtSock = btDev.createRfcommSocketToServiceRecord(UUID.fromString(SPP_UUID));
                     this.BtSock.connect();
                     this.BtInStream = this.BtSock.getInputStream();
                     this.BtOutStream = this.BtSock.getOutputStream();

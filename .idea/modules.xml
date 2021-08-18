@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RasPiTank.iml" filepath="$PROJECT_DIR$/RasPiTank.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RasPiTank.iml" filepath="$PROJECT_DIR$/.idea/modules/RasPiTank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RasPiTank.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RasPiTank.app.iml" />
     </modules>
   </component>
 </project>
