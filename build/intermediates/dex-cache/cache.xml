@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="G:\AndroidStudioProjects\RasPiTank\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="G:\AndroidStudioProjects\RasPiTank\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.3.0_0741da61f907d462f7339c014cf5a97e151732ce.jar" />
+    </item>
+    <item
+        jar="G:\AndroidStudioProjects\RasPiTank\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="G:\AndroidStudioProjects\RasPiTank\app\build\intermediates\pre-dexed\debug\internal_impl-23.3.0_4f207b1ce0111d1cb9e51f8cd0182681ac675a3c.jar" />
+    </item>
+    <item
+        jar="C:\Users\yama\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v3.0.1\369f9aa48a629b4e92557b37326f42dc3de796e4\MPAndroidChart-v3.0.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="369f9aa48a629b4e92557b37326f42dc3de796e4">
+        <dex dex="G:\AndroidStudioProjects\RasPiTank\app\build\intermediates\pre-dexed\debug\MPAndroidChart-v3.0.1_2e35335cd490c57d6a1498bd516d1c9af71b9448.jar" />
+    </item>
+    <item
+        jar="G:\AndroidStudioProjects\RasPiTank\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="daf6c21a41e6841e9f1cb5428ed91d4b30d40521">
+        <dex dex="G:\AndroidStudioProjects\RasPiTank\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_45a466061b426bba8dcf3289b8b246a1b84fe058.jar" />
+    </item>
+    <item
+        jar="G:\AndroidStudioProjects\RasPiTank\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="G:\AndroidStudioProjects\RasPiTank\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.3.0_3547566ad56db3a7da3699aa5fe9238bd10d52e8.jar" />
+    </item>
+    <item
+        jar="G:\AndroidStudioProjects\RasPiTank\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="G:\AndroidStudioProjects\RasPiTank\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.3.0_a3c3fee791c3872ed0d121aad6ccd85b0360f9fe.jar" />
+    </item>
+    <item
+        jar="G:\AndroidStudioProjects\RasPiTank\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c58748c044a214b8763cdd979a27a89ed34109e5">
+        <dex dex="G:\AndroidStudioProjects\RasPiTank\app\build\intermediates\pre-dexed\debug\instant-run_346570cf98b63778fb57bac2a8c0aaf0b582f79e.jar" />
+    </item>
+    <item
+        jar="G:\AndroidStudioProjects\RasPiTank\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="G:\AndroidStudioProjects\RasPiTank\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.3.0_933909a2bc3794def5c99dbd05b68dd5fc69b865.jar" />
+    </item>
+    <item
+        jar="C:\Users\yama\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="G:\AndroidStudioProjects\RasPiTank\app\build\intermediates\pre-dexed\debug\support-annotations-23.3.0_e26dd8ea7446dfa23fb7d377595a050f0defbe16.jar" />
+    </item>
+
+</items>
